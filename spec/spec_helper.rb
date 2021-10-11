@@ -3,9 +3,11 @@ require 'httparty/request'
 require 'httparty/response/headers'
 
 require_relative '../services/login_services.rb'
+require_relative '../services/cadastrar_services.rb'
 
 RSpec.configure do |config|
   include Login
+  include Cadastrar
   config.color = true
   config.formatter = :documentation
   # rspec-expectations config goes here. You can use an alternate
