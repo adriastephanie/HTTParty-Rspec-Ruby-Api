@@ -20,4 +20,4 @@ jobs:
       - name: Run Rspec version
         run: rspec -v
       - name: Run test
-        run: rspec ./spec/cadastrar_tarefa_spec.rb
+        run: bundle exec rspec
