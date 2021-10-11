@@ -15,5 +15,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true # Run "bundle install", and cache the result automatically.
+      - name: Run Rspec version
+        run: rspec -v
       - name: Run test
         run: rspec
