@@ -24,8 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      - name: Install dependencies
+      - name: Install Gem
+        run: gem install bundler
+      - name: Install Bundle
         run: bundle install
       - name: Run tests
-        run: bundle exec rake spec
+        run: rspec
